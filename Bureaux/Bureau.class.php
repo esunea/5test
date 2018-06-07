@@ -7,14 +7,7 @@ class Bureau {
 	protected $tables        = 0;
 	protected $personnes     = 0;
 
-	static function createRandom() {
-		if( $this instanceOf Bureau){
-			echo("Bureau");
-		}
-		if( $this instanceOf BureauDeveloppeur){
-			echo("dev");
-		}
-	}
+	
 
 
 	function __construct($array = array()){

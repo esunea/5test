@@ -27,6 +27,20 @@ $bureauComm->addPersonne();
 
 
 $bureaux = array();
-$bureaux[] = new BureauCommercial();
+
 echo("<br/>");
-BureauDeveloppeur::createRandom();
+// BureauDeveloppeur::createRandom();
+function generateRandomDevBureau ($bureaux) {
+	$array = array();
+	foreach ($arrayKeys as $index => $key) {
+		$array[$key] = rand(3,8);
+	}
+	$bureaux[] = new BureauDeveloppeur($array);
+}
+function generateRandomComBureau ($bureaux) {
+	$array = array();
+	foreach ($arrayKeys as $index => $key) {
+		$array[$key] = rand(3,8);
+	}
+	$bureaux[] = new BureauCommercial($array);
+}
